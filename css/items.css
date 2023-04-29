@@ -1,0 +1,9 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    /* add blue h1 headings */
+    padding: 0;
+    h1{
+        color: blue;
+    }
+}
