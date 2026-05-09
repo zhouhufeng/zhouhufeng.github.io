@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="STAAR and its extensions use functional annotation to improve rare-variant association analysis for whole-genome sequencing studies.">
+  <title>STAAR Methods | Hufeng Zhou</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  
+    <header class="site-header">
+      <nav class="container nav" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Hufeng Zhou home">
+          <span class="brand-mark">HZ</span>
+          <span class="brand-text">Hufeng Zhou<span>Computational Biology</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">Menu</button>
+        <ul class="nav-list" id="site-nav"><li><a href="index.html" class="nav-link">Home</a></li><li><a href="about.html" class="nav-link">About</a></li><li><a href="publications.html" class="nav-link">Publications</a></li><li><a class="nav-parent active" href="projects.html">Research</a><ul class="dropdown">
+            <li class="subhead">Population genetics</li>
+            <li><a href="Population_Genetics.html">Overview</a></li><li><a href="FAVOR.html">FAVOR</a></li><li><a href="STAAR.html">STAAR</a></li>
+            <li class="subhead">Epigenomics</li>
+            <li><a href="Epigenomics.html">Overview</a></li><li><a href="EBV_Oncoproteins.html">EBV oncoproteins</a></li><li><a href="EBV_Super_Enhancers.html">Super enhancers</a></li><li><a href="EBV_Regulome.html">EBV regulome</a></li>
+            <li class="subhead">Protein interactions</li>
+            <li><a href="PPIs.html">Overview</a></li><li><a href="IntraPPIs.html">Intra-species PPIs</a></li><li><a href="Host-Pathogen-PPIs.html">Host-pathogen PPIs</a></li><li><a href="Protein-functions.html">Protein functions</a></li>
+            <li class="subhead">AI and translation</li>
+            <li><a href="AI_Genomics.html">AI genomics and pathology</a></li></ul></li><li><a href="Software.html" class="nav-link">Software</a></li><li><a href="contact.html" class="nav-link">Contact</a></li></ul>
+      </nav>
+    </header>
+  <main id="main">
+    
+      
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker">Rare-variant association testing</p>
+        <h1>STAAR Methods</h1>
+        <p>STAAR and its extensions use functional annotation to improve rare-variant association analysis for whole-genome sequencing studies.</p>
+      </div>
+    </section>
+      <section class="section">
+        <div class="container feature">
+          <div>
+            
+    <div class="section-heading">
+      <div class="eyebrow-line"></div>
+      <p class="kicker">Overview</p>
+      <h2>STAAR Methods</h2>
+      <p>The STAAR family of methods combines statistical genetics and functional genomics so rare variants can be tested in biologically meaningful sets. The ecosystem spans single-study analysis, biobank-scale pipelines, meta-analysis, multi-trait analysis, single-cell-informed noncoding tests, and time-to-event outcomes.</p>
+    </div>
+            <ul><li>Annotation principal components and dynamic annotation weighting.</li><li>Scalable analysis for very large WGS cohorts with continuous and binary traits.</li><li>Extensions for meta-analysis, multi-trait discovery, cell-type-informed noncoding regions, and survival outcomes.</li><li>Software implementations designed for consortium-scale genetic studies.</li></ul>
+            
+            <div class="actions"><a href="https://github.com/li-lab-genetics/STAAR" class="button outline" target="_blank" rel="noopener">STAAR GitHub</a><a href="https://github.com/xihaoli/STAARpipeline" class="button outline" target="_blank" rel="noopener">STAARpipeline GitHub</a><a href="https://github.com/xihaoli/metaSTAAR" class="button outline" target="_blank" rel="noopener">metaSTAAR GitHub</a></div>
+          </div>
+          <div class="media-frame"><img src="img/STAAR.png" alt="STAAR Methods figure"></div>
+        </div>
+      </section>
+      <section class="section alt">
+        <div class="container">
+          
+    <div class="section-heading">
+      <div class="eyebrow-line"></div>
+      <p class="kicker">Publications</p>
+      <h2>Related work</h2>
+      <p>Representative publications connected to this project.</p>
+    </div>
+          <div class="publication-list">
+    <article class="publication pub-highlight">
+      <div class="pub-year">2020</div>
+      <div>
+        <h3>Dynamic incorporation of multiple in silico functional annotations empowers rare variant association analysis of large whole-genome sequencing studies at scale.</h3>
+        <p class="authors">Li X, Li Z, Zhou H, Gaynor SM, Liu Y, Chen H, Sun R, Dey R, Arnett DK, Aslibekyan S, Ballantyne CM, Bielak LF, Blangero J, Boerwinkle E, Bowden DW, Broome JG, Conomos MP, Correa A, Cupples LA, Curran JE, Freedman BI, Guo X, Hindy G, Irvin MR, Kardia SLR, Kathiresan S, Khan AT, Kooperberg CL, Laurie CC, Liu XS, Mahaney MC, Manichaikul AW, Martin LW, Mathias RA, McGarvey ST, Mitchell BD, Montasser ME, Moore J, Morrison AC, O'Connell JR, Palmer ND, Pampana A, Peralta JM, Peyser PA, Psaty BM, Redline S, Rice KM, Rich SS, Smith JA, Tiwari HK, Tsai MY, Vasan RS, Wang FF, Weeks DE, Weng Z, Wilson JG, Yanek LR, TOPMed Consortium, Neale BM, Sunyaev SR, Abecasis GR, Rotter JI, Willer CJ, Peloso GM, Natarajan P, Lin X.</p>
+        <p class="venue">Nat Genet. 2020;52(9):969-983.</p>
+        
+      </div>
+    </article>
+    <article class="publication pub-highlight">
+      <div class="pub-year">2023</div>
+      <div>
+        <h3>Powerful, scalable and resource-efficient meta-analysis of rare variant associations in large whole genome sequencing studies.</h3>
+        <p class="authors">Li X, Quick C, Zhou H, Gaynor SM, Liu Y, Chen H, Selvaraj MS, Sun R, Dey R, Arnett DK, Bielak LF, Bis JC, Blangero J, Boerwinkle E, Bowden DW, Brody JA, Cade BE, Correa A, Cupples LA, Curran JE, de Vries PS, Duggirala R, Freedman BI, Goring HH, Guo X, Haessler J, Kalyani RR, Kooperberg C, Kral BG, Lange LA, Manichaikul A, Martin LW, McGarvey ST, Mitchell BD, Montasser ME, Morrison AC, Naseri T, O'Connell JR, Palmer ND, Peyser PA, Psaty BM, Raffield LM, Redline S, Reiner AP, Reupena MS, Rice KM, Rich SS, Sitlani CM, Smith JA, Taylor KD, Vasan RS, Willer CJ, Wilson JG, Yanek LR, Zhao W, TOPMed Consortium, Rotter JI, Natarajan P, Peloso GM, Li Z, Lin X.</p>
+        <p class="venue">Nat Genet. 2023;55(1):154-164.</p>
+        <div class="links"><a href="https://doi.org/10.1038/s41588-022-01225-6" target="_blank" rel="noopener">DOI</a><a href="https://pubmed.ncbi.nlm.nih.gov/36564505/" target="_blank" rel="noopener">PubMed</a></div>
+      </div>
+    </article>
+    <article class="publication pub-highlight">
+      <div class="pub-year">2022</div>
+      <div>
+        <h3>A framework for detecting noncoding rare-variant associations of large-scale whole-genome sequencing studies.</h3>
+        <p class="authors">Li Z, Li X, Zhou H, Gaynor SM, Selvaraj MS, Arapoglou T, Quick C, Liu Y, Chen H, Sun R, Dey R, Arnett DK, Auer PL, Bielak LF, Bis JC, Blackwell T, Blangero J, Boerwinkle E, Bowden DW, Brody JA, Cade BE, Conomos MP, Correa A, Cupples LA, Curran JE, de Vries PS, Duggirala R, Franceschini N, Freedman BI, Goring HH, Guo X, Kalyani RR, Kooperberg C, Kral BG, Lange L, Lin B, Manichaikul A, Manning A, Martin LW, Mathias R, Meigs JB, Mitchell BD, Montasser ME, Morrison AC, Naseri T, O'Connell J, Palmer ND, Peyser PA, Psaty BM, Raffield LM, Redline S, Reiner AP, Reupena MS, Rice KM, Rich S, Smith J, Taylor KD, Taub M, Vasan RS, Weeks D, Wilson J, Yanek L, Zhao W, TOPMed Group, Rotter J, Willer C, Natarajan P, Peloso G, Lin X.</p>
+        <p class="venue">Nat Methods. 2022;19:1599-1611.</p>
+        <div class="links"><a href="https://doi.org/10.1038/s41592-022-01640-x" target="_blank" rel="noopener">DOI</a></div>
+      </div>
+    </article></div>
+        </div>
+      </section>
+    
+  </main>
+  
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h2>Hufeng Zhou</h2>
+          <p>Computational biologist and statistical geneticist. Research Scientist, Harvard T.H. Chan School of Public Health; former Instructor, Harvard Medical School and Brigham and Women's Hospital.</p>
+          <p>Copyright 2026 Hufeng Zhou. Built as a static GitHub Pages site.</p>
+        </div>
+        <div>
+          <h3>Connect</h3>
+          <div class="footer-links">
+            <a href="HZHOU-CV-Jan24th2026.docx">CV</a>
+            <a href="mailto:hufengzhou@g.harvard.edu">Email</a>
+            <a href="https://github.com/zhouhufeng" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=Ddw_B4EAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            <a href="https://orcid.org/0000-0001-9382-5674" target="_blank" rel="noopener">ORCID</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=0000-0001-9382-5674" target="_blank" rel="noopener">PubMed</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const toggle = document.querySelector(".nav-toggle");
+      const nav = document.querySelector(".nav-list");
+      if (toggle && nav) {
+        toggle.addEventListener("click", () => {
+          const open = nav.classList.toggle("open");
+          document.body.classList.toggle("nav-open", open);
+          toggle.setAttribute("aria-expanded", String(open));
+        });
+      }
+    </script>
+</body>
+</html>
