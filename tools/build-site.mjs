@@ -505,11 +505,11 @@ const software = [
       "A local, auditable AI agent for discovering, retrieving, and analyzing data from the IGVF Portal, Catalog, Knowledge Graph, ENCODE, FAVOR, and related public resources."
   },
   {
-    title: "FAVOR 2.0 and FAVOR-GPT",
+    title: "FAVOR",
     href: "FAVOR.html",
     image: "img/portfolio/FAVORannotator.png",
     summary:
-      "A reengineered annotation resource with expanded annotation scope, redesigned infrastructure, API support, updated visualization, and a generative interface."
+      "Functional Annotation of Variants Online Resource, including FAVOR 2.0, FAVORannotator, and FAVOR-GPT for genome-wide variant annotation, search, batch analysis, and interpretation."
   },
   {
     title: "STAAR",
