@@ -498,11 +498,11 @@ const researchAreas = [
 
 const software = [
   {
-    title: "FAVOR",
-    href: "https://favor.genohub.org/",
-    image: "img/FAVOR.png",
+    title: "IGVFagent",
+    href: "AI_Genomics.html",
+    image: "img/igvfagent.svg",
     summary:
-      "Functional Annotation of Variants Online Resource, an open-access portal for whole-genome variant annotation, search, batch analysis, and interpretation."
+      "A local, auditable AI agent for discovering, retrieving, and analyzing data from the IGVF Portal, Catalog, Knowledge Graph, ENCODE, FAVOR, and related public resources."
   },
   {
     title: "FAVOR 2.0 and FAVOR-GPT",
@@ -1291,7 +1291,7 @@ function softwarePage() {
       ${pageHero("Software", "Tools and resources", "Open and consortium-facing software for variant annotation, rare-variant association testing, pathway integration, and protein interaction analysis.")}
       <section class="section">
         <div class="container">
-          ${sectionHeading("Portfolio", "Scientific software with research impact", "These tools support variant annotation, rare-variant association testing, pathway integration, and protein interaction analysis.")}
+          ${sectionHeading("Portfolio", "Scientific software with research impact", "These tools support auditable AI agents, variant annotation, rare-variant association testing, pathway integration, and protein interaction analysis.")}
           <div class="grid four">${software.map(softwareCard).join("")}</div>
         </div>
       </section>
@@ -1300,7 +1300,7 @@ function softwarePage() {
           ${sectionHeading("Principles", "What the tools are built to do", "For a job-market page, software is framed as a research contribution rather than a side project.")}
           <div class="grid three">
             <article class="card"><h3>Scale</h3><p>Handle whole-genome sequencing data, large cohorts, consortium meta-analysis, and annotation resources that exceed ordinary desktop workflows.</p></article>
-            <article class="card"><h3>Interpretability</h3><p>Use functional annotation, visualization, and searchable resources so variant-level results become biologically meaningful.</p></article>
+            <article class="card"><h3>Interpretability</h3><p>Use auditable agent loops, functional annotation, visualization, and searchable resources so variant-level results become biologically meaningful.</p></article>
             <article class="card"><h3>Reusability</h3><p>Package methods as tools, portals, and reproducible workflows that collaborators can adopt in real studies.</p></article>
           </div>
         </div>
