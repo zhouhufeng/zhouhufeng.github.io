@@ -482,6 +482,8 @@ li {
 }
 
 .portrait {
+  display: block;
+  width: 100%;
   aspect-ratio: 4 / 5;
   border-radius: 8px;
   object-fit: cover;
@@ -518,6 +520,108 @@ li {
 
 .feature.reverse {
   grid-template-columns: 1.05fr 0.95fr;
+}
+
+.ai-agent-section {
+  background: #f7fafb;
+}
+
+.agent-feature {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.agent-panel {
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.agent-sources {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.45rem;
+}
+
+.agent-sources span,
+.agent-flow span {
+  display: flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #eef7f8;
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 760;
+  text-align: center;
+}
+
+.agent-core {
+  display: grid;
+  justify-items: center;
+  gap: 0.25rem;
+  margin: 1.1rem 0;
+  padding: 1.35rem;
+  border: 1px solid rgba(0, 109, 119, 0.28);
+  border-radius: 8px;
+  background: #fbfcfd;
+  text-align: center;
+}
+
+.agent-core strong {
+  color: var(--ink);
+  font-size: 1.35rem;
+}
+
+.agent-core em {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: normal;
+}
+
+.agent-icon {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--accent-2);
+  color: #fff;
+  font-weight: 820;
+}
+
+.agent-flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.agent-flow span {
+  background: #fff6e6;
+  border-color: rgba(184, 134, 11, 0.3);
+}
+
+.agent-usecases {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.agent-usecases li {
+  padding: 0.65rem 0.75rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  background: #f7fafb;
+  color: var(--muted);
 }
 
 .media-frame {
@@ -776,6 +880,7 @@ li {
   .grid.three,
   .grid.four,
   .profile-strip,
+  .agent-feature,
   .feature,
   .feature.reverse,
   .contact-grid,
@@ -811,6 +916,11 @@ li {
   }
 
   .hero-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .agent-sources,
+  .agent-flow {
     grid-template-columns: 1fr 1fr;
   }
 

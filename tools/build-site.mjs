@@ -13,6 +13,7 @@ const site = {
   phone: "+1-617-903-8599",
   office: "677 Huntington Ave, Boston, MA 02115",
   cv: "HZHOU-CV-Jan24th2026.docx",
+  portrait: "img/hufeng-zhou-portrait.jpg",
   github: "https://github.com/zhouhufeng",
   scholar: "https://scholar.google.com/citations?user=Ddw_B4EAAAAJ&hl=en",
   orcid: "https://orcid.org/0000-0001-9382-5674",
@@ -473,11 +474,11 @@ const researchAreas = [
       "Integrative genomic studies of Epstein-Barr virus transcriptional regulation, super-enhancers, enhancer RNAs, viral oncoproteins, and host chromatin architecture."
   },
   {
-    title: "AI-enabled genomics and digital pathology",
+    title: "AI agents, genomics, and digital pathology",
     href: "AI_Genomics.html",
     image: "img/STAARpipe2.png",
     summary:
-      "Machine-learning and deep-learning applications for pathogenic variant annotation, WGS quality control, multi-omic integration, and H&E whole-slide pathology risk modeling."
+      "Local, auditable AI agents plus machine-learning and deep-learning systems for variant interpretation, multi-omic integration, WGS quality control, and H&E pathology risk modeling."
   },
   {
     title: "Host-pathogen computational biology",
@@ -728,10 +729,12 @@ const projectDetails = [
     kicker: "Machine learning for biomedical data",
     image: "img/STAARpipe2.png",
     description:
-      "AI-driven approaches for pathogenic variant annotation, quality control in large-scale WGS, multi-omic integration, and digital pathology risk prediction.",
+      "AI agents and machine-learning systems for pathogenic variant annotation, IGVF ecosystem analysis, large-scale WGS quality control, multi-omic integration, and digital pathology risk prediction.",
     body:
-      "The CV highlights an expanding translational data-science direction: applying machine learning and deep learning across variant annotation, functional genomics, automated WGS quality control, and whole-slide pathology image analysis. This adds a forward-looking AI thread to the job-market research profile while staying grounded in genomics and disease biology.",
+      "This direction builds local, auditable AI agents for biomedical discovery while staying grounded in statistical genetics, functional genomics, and disease biology. IGVFagent is a concrete example: an agent for discovering, retrieving, and analyzing data from the IGVF Portal, Catalog, Knowledge Graph, and related resources such as ENCODE and FAVOR through a Plan-Action-Results-Evaluation loop.",
     highlights: [
+      "IGVFagent: a local, auditable agent for structured knowledge-graph queries, portal and catalog retrieval, public-resource integration, analysis, tool use, and evidence checking.",
+      "Agent orchestration that makes the reasoning path inspectable through Plan, Action, Results, and Evaluation stages.",
       "Pathogenic noncoding variant annotation using statistical and neural-network models that integrate epigenetic marks, conservation, microRNA binding, and other multi-omic data.",
       "Automated WGS quality-control pipelines with variant-level and sample-level filters, anomaly detection, and batch-effect checks.",
       "Digital pathology work using H&E whole-slide images for tumor-region localization and 10-year progression-risk stratification in ER-positive, lymph-node-negative breast cancer.",
@@ -1049,19 +1052,61 @@ function homePage() {
 
       <section class="section">
         <div class="container profile-strip">
-          <img class="portrait" src="img/me.png" alt="Hufeng Zhou">
+          <img class="portrait" src="${escapeHtml(site.portrait)}" alt="Hufeng Zhou">
           <div>
             ${sectionHeading("Profile", "Computational biology for genomic medicine", "My work connects statistical genetics, functional genomics, and robust software systems so large-scale sequencing studies can move from raw variants to biological insight.")}
             <p>${escapeHtml(site.affiliation)}.</p>
-            <p>I focus on annotation-informed rare-variant association methods, functional annotation resources such as FAVOR, EBV-associated cancer epigenomics, AI-driven genomic and pathology data science, host-pathogen computational biology, and software infrastructure that helps research consortia analyze large sequencing datasets.</p>
+            <p>I focus on annotation-informed rare-variant association methods, functional annotation resources such as FAVOR, EBV-associated cancer epigenomics, biomedical AI agents, AI-driven genomic and pathology data science, host-pathogen computational biology, and software infrastructure that helps research consortia analyze large sequencing datasets.</p>
             <div class="topic-list">
               <span class="tag">Statistical genetics</span>
               <span class="tag">Whole-genome sequencing</span>
               <span class="tag">Functional annotation</span>
+              <span class="tag">Biomedical AI agents</span>
               <span class="tag">AI and digital pathology</span>
               <span class="tag">EBV epigenomics</span>
               <span class="tag">Scientific software</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section ai-agent-section">
+        <div class="container agent-feature">
+          <div>
+            <p class="kicker">Biomedical AI agents</p>
+            <h2>Local, auditable agents for genomic discovery</h2>
+            <p>I am creating AI agents for biomedical research applications, including <strong>IGVFagent</strong>, a local and auditable agent for discovering, retrieving, and analyzing data from the IGVF ecosystem and related public resources.</p>
+            <p>IGVFagent is designed to work across the IGVF Portal, Catalog, Knowledge Graph, ENCODE, FAVOR, publications, assay data, and analysis tools while keeping the reasoning path inspectable through a Plan &rarr; Action &rarr; Results &rarr; Evaluation loop.</p>
+            <div class="actions">
+              ${link("AI_Genomics.html", "AI agent research", "button secondary")}
+              ${link(site.github, "GitHub", "button outline")}
+            </div>
+          </div>
+          <div class="agent-panel" aria-label="IGVFagent workflow">
+            <div class="agent-sources">
+              <span>IGVF Portal</span>
+              <span>IGVF Catalog</span>
+              <span>Knowledge Graph</span>
+              <span>ENCODE</span>
+              <span>FAVOR</span>
+            </div>
+            <div class="agent-core">
+              <span class="agent-icon">AI</span>
+              <strong>IGVFagent</strong>
+              <em>local, auditable, evidence-aware</em>
+            </div>
+            <div class="agent-flow">
+              <span>Plan</span>
+              <span>Action</span>
+              <span>Results</span>
+              <span>Evaluation</span>
+            </div>
+            <ul class="agent-usecases">
+              <li>Variant scoring and interpretation</li>
+              <li>Multi-omic integration and enhancer-gene mapping</li>
+              <li>Fine-mapping, trajectory inference, and cross-tissue analysis</li>
+              <li>Evidence cross-checking, provenance, and human feedback</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -1118,7 +1163,7 @@ function aboutPage() {
             <p>Across these areas, the common theme is building rigorous computational methods and usable research infrastructure for complex biological data. This includes rare-variant association methods for whole-genome sequencing studies, annotation resources such as FAVOR, and integrative genomic analyses of viral and host regulatory programs.</p>
             <div class="actions">${link(site.cv, "Download CV", "button")}</div>
           </div>
-          <div class="media-frame photo"><img src="img/me.png" alt="Hufeng Zhou portrait"></div>
+          <div class="media-frame photo"><img src="${escapeHtml(site.portrait)}" alt="Hufeng Zhou portrait"></div>
         </div>
       </section>
 
