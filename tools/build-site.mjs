@@ -490,9 +490,9 @@ const researchAreas = [
   {
     title: "Scientific software and reproducible pipelines",
     href: "Software.html",
-    image: "img/portfolio/metaSTAAR.png",
+    image: "img/wgsagent.svg",
     summary:
-      "Open software, data resources, and analysis pipelines that turn statistical methods into practical tools for large consortia and biomedical collaborators."
+      "Open software, AI agents, data resources, and analysis pipelines that turn statistical methods into practical tools for large consortia and biomedical collaborators."
   }
 ];
 
@@ -526,11 +526,11 @@ const software = [
       "A scalable pipeline for coding, noncoding, gene-centric, and region-based rare-variant association analysis."
   },
   {
-    title: "metaSTAAR",
-    href: "https://github.com/xihaoli/metaSTAAR",
-    image: "img/portfolio/metaSTAAR.png",
+    title: "WGSagent",
+    href: "AI_Genomics.html",
+    image: "img/wgsagent.svg",
     summary:
-      "Resource-efficient meta-analysis framework for rare-variant associations across large WGS and WES studies."
+      "An autonomous AI agent for end-to-end whole-genome sequencing analysis, coordinating QC, ancestry and relatedness modeling, annotation, rare-variant testing, meta-analysis, cell-type-aware interpretation, eGASS storage, and human review."
   },
   {
     title: "cellSTAAR",
@@ -1138,7 +1138,7 @@ function homePage() {
           <div>
             <p class="kicker">Software and resources</p>
             <h2>Tools that make genome-scale studies usable</h2>
-            <p>FAVOR, FAVORannotator, STAAR, STAARpipeline, metaSTAAR, MultiSTAAR, and cellSTAAR show a consistent thread: methods that are not only statistically rigorous, but usable by large collaborations.</p>
+            <p>FAVOR, FAVORannotator, STAAR, STAARpipeline, WGSagent, and cellSTAAR show a consistent thread: methods that are not only statistically rigorous, but usable by large collaborations.</p>
             <div class="actions">${link("Software.html", "Software portfolio", "button secondary")}</div>
           </div>
           <div class="media-frame"><img src="img/FAVOR.png" alt="FAVOR interface and annotation resource"></div>
