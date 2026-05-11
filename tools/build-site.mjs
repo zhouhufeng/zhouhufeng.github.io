@@ -533,11 +533,11 @@ const software = [
       "Resource-efficient meta-analysis framework for rare-variant associations across large WGS and WES studies."
   },
   {
-    title: "MultiSTAAR and cellSTAAR",
+    title: "cellSTAAR",
     href: "STAAR.html",
     image: "img/portfolio/STAARpipeline.png",
     summary:
-      "Extensions for multi-trait rare-variant analysis and single-cell-informed testing of noncoding regions."
+      "Single-cell-informed rare-variant association testing for noncoding regions, integrating functional data to improve power in whole-genome sequencing studies."
   },
   {
     title: "IntPath",
