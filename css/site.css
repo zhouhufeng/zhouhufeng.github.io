@@ -149,6 +149,13 @@ li {
   font-weight: 820;
 }
 
+.brand-logo {
+  height: 46px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
 .brand-text span {
   display: block;
   color: var(--muted);
